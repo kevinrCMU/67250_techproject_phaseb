@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Reynoso">
+    <meta name="keywords" content="Museum, Checkout, Tickets">
+    <meta name="description" content="Purchase tickets to MonoMuse.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse — Checkout</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <img id="logo" src="../static/monomuselogo.svg" alt="MonoMuse Museum Logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a id="navselected" href="checkout.html">Checkout</a>
+            <a href="membership.html">Membership</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h2>Checkout</h2>
+        <p>Fill out the form below to purchase your tickets. All fields marked with * are required.</p>
+
+        <form>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="visit-date">Visit Date *</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+
+            <label for="ticket-type">Ticket Type *</label>
+            <select id="ticket-type" name="ticket-type" required>
+                <option value="">Select a ticket type</option>
+                <option value="general">General Admission — $18</option>
+                <option value="student">Student — $18</option>
+                <option value="member">Member — $18</option>
+            </select>
+
+            <label for="quantity">Quantity (1-10) *</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <label for="zipcode">Zip Code (optional)</label>
+            <input type="text" id="zipcode" name="zipcode" maxlength="5">
+
+            <label for="mailing-list">
+                <input type="checkbox" id="mailing-list" name="mailing-list">
+                Join our mailing list
+            </label>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p id="copyYear"></p>
+    </footer>
+</body>
+</html>

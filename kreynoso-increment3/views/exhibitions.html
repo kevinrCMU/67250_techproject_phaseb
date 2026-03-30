@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Reynoso">
+    <meta name="keywords" content="Museum, Exhibitions, Art, Technology">
+    <meta name="description" content="Current and upcoming exhibitions at MonoMuse.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse — Exhibitions</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <img id="logo" src="../static/monomuselogo.svg" alt="MonoMuse Museum Logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a id="navselected" href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="membership.html">Membership</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h2>Current Exhibitions</h2>
+
+        <h3>Emergent Forms: Generative Art Since 1960</h3>
+        <p>
+            From early plotter drawings to real-time algorithmic visuals, this exhibition traces six decades of artists writing code to make art. Featuring works by Vera Molnár, Casey Reas, and Refik Anadol, alongside pieces from emerging artists working with machine learning and neural networks. The show asks a simple question: when the artist writes the rules and the machine makes the work, who's the creator?
+        </p>
+        <p>On view through April 20, 2026.</p>
+
+        <h3>Touch the Interface: A History of Human-Computer Interaction</h3>
+        <p>
+            This hands-on exhibition walks you through the evolution of how people interact with machines. Try a working replica of Doug Engelbart's original mouse from 1968. Use a light pen on a restored Sketchpad terminal. Play with multitouch prototypes that predate the iPhone by two decades. It's part history lesson, part playground.
+        </p>
+        <p>On view through May 15, 2026.</p>
+
+        <h3>Resonance: A Sound Installation by Hana Yoo</h3>
+        <p>
+            Pittsburgh-based artist Hana Yoo has transformed our third-floor gallery into a sound environment that responds to your movement. Walk through the space and the room shifts around you — ambient tones, field recordings from Pittsburgh's rivers and bridges, and synthesized textures that react to where you stand. No two visits sound the same.
+        </p>
+        <p>On view through June 1, 2026.</p>
+
+        <h2>Coming Soon</h2>
+
+        <h3>Pixel and Grain: Photography in the Age of AI</h3>
+        <p>
+            Opening July 2026, this exhibition examines what happens to photography when images can be generated from text prompts. Featuring work from photojournalists, fine art photographers, and AI researchers, the show explores authenticity, trust, and the future of visual truth.
+        </p>
+    </div>
+
+    <footer>
+        <p id="copyYear"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* MonoMuse Dark Theme - style.css */
+
+/* Global Styles */
+* {
+    padding: 5px;
+    margin: 5px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+    font-style: normal;
+    background: #0b0b0c;
+    color: #f5f5f7;
+}
+
+/* Logo */
+#logo {
+    width: 18%;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    padding: 10px 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    border-color: #4d5c3b;
+}
+
+/* Active nav link - highlights current page */
+#navselected {
+    color: #92ad70;
+}
+
+/* CTA button style for Buy Tickets */
+.cta {
+    display: inline-block;
+    background-color: #92ad70;
+    color: #0b0b0c;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.cta:hover {
+    background-color: #a8c282;
+    color: #0b0b0c;
+}
+
+/* Headings */
+h1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: #92ad70;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+/* Paragraphs */
+p {
+    font-weight: 100;
+    font-size: 0.95rem;
+    color: rgba(245, 245, 247, 0.85);
+    max-width: 700px;
+}
+
+/* Links inside main content */
+.main a {
+    color: #92ad70;
+}
+
+.main a:hover {
+    color: #a8c282;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 0.95rem;
+    color: rgba(245, 245, 247, 0.85);
+    margin-bottom: 8px;
+}
+
+/* Table Styling - Tickets Page */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 650px;
+    margin: 15px 0;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    background-color: #92ad70;
+    color: #0b0b0c;
+    font-weight: 400;
+    width: fit-content;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(245, 245, 247, 0.12);
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1e;
+}
+
+/* Form Styling - Checkout Page */
+form {
+    max-width: 450px;
+    margin: 10px 0;
+}
+
+form * {
+    margin: auto;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(245, 245, 247, 0.2);
+    border-radius: 6px;
+    background-color: #1a1a1e;
+    color: #f5f5f7;
+    font-size: 0.95rem;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #92ad70;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background-color: #92ad70;
+    color: #0b0b0c;
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a8c282;
+}
+
+/* Checkbox styling */
+form input[type="checkbox"] {
+    width: auto;
+    display: inline;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(245, 245, 247, 0.12);
+    padding: 18px 16px;
+    text-align: center;
+    color: rgba(245, 245, 247, 0.72);
+    margin-top: 40px;
+}
+
+footer p {
+    color: rgba(245, 245, 247, 0.5);
+    text-align: center;
+    font-size: 0.85rem;
+}
