@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Reynoso">
+    <meta name="keywords" content="Museum, Tickets, Pricing">
+    <meta name="description" content="Ticket pricing and scheduling for MonoMuse.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse — Tickets</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.svg" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+            <a href="../index.html">Home</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="membership.html">Membership</a>
+        </nav>
+
+        <main class="main">
+            <h2>Buy Tickets</h2>
+            <p>
+                Tickets can be purchased online or at the front desk. We recommend buying ahead because weekends and Friday late nights tend to fill up. All tickets include access to every current exhibition.
+            </p>
+
+            <h3>Pricing</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Admission</td>
+                        <td>Full access to all current exhibitions and installations</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Valid student ID required at entry</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Active MonoMuse membership required</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Child (under 5)</td>
+                        <td>Free entry with a ticketed adult</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>April 2026 Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Day</th>
+                        <th>Hours</th>
+                        <th>Availability</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 2</td>
+                        <td>Wednesday</td>
+                        <td>10 AM - 6 PM</td>
+                        <td>Open</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 3</td>
+                        <td>Thursday</td>
+                        <td>10 AM - 6 PM</td>
+                        <td>Open</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 4</td>
+                        <td>Friday</td>
+                        <td>10 AM - 9 PM</td>
+                        <td>Open</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 5</td>
+                        <td>Saturday</td>
+                        <td>10 AM - 6 PM</td>
+                        <td>Limited</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 6</td>
+                        <td>Sunday</td>
+                        <td>10 AM - 6 PM</td>
+                        <td>Open</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 7</td>
+                        <td>Monday</td>
+                        <td>10 AM - 6 PM</td>
+                        <td>Open</td>
+                        <td><button class="buy-btn" onclick="showTicketForm()">Buy Now</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="ticketForm">
+                <h3>Purchase Tickets</h3>
+                <form>
+                    <label for="t-name">Name *</label>
+                    <input type="text" id="t-name" name="t-name" required>
+
+                    <label for="t-email">Email *</label>
+                    <input type="email" id="t-email" name="t-email" required>
+
+                    <label for="t-quantity">Number of Tickets *</label>
+                    <input type="number" id="t-quantity" name="t-quantity" min="1" max="10" required>
+
+                    <label for="t-date">Selected Date</label>
+                    <input type="date" id="t-date" name="t-date">
+
+                    <button type="button" onclick="submitOrder()">Submit</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Reynoso">
+    <meta name="keywords" content="Museum, Order Confirmation">
+    <meta name="description" content="Your MonoMuse ticket order has been confirmed.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+    <title>MonoMuse — Order Confirmed</title>
+</head>
+<body onload="addYear(); loadConfirmation();">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.svg" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+            <a href="../index.html">Home</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="membership.html">Membership</a>
+        </nav>
+
+        <main class="main">
+            <h2>Order Confirmed</h2>
+            <p>Thank you for your purchase. Your tickets have been reserved and a confirmation email is on its way.</p>
+
+            <div class="confirmation-box">
+                <h3 id="confirmTotal">Total Charged: $0.00</h3>
+                <div id="confirmDetails"></div>
+            </div>
+
+            <p>Questions about your order? Email us at <strong>tickets@monomuse.org</strong>.</p>
+
+            <a class="cta" href="../index.html">Back to Home</a>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
