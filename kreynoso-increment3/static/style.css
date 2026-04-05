@@ -37,12 +37,12 @@ nav a:hover {
     border-color: #4d5c3b;
 }
 
-/* Active nav link - highlights current page */
+/* active nav link */
 #navselected {
     color: #92ad70;
 }
 
-/* CTA button style for Buy Tickets */
+/* CTA button */
 .cta {
     display: inline-block;
     background-color: #92ad70;
@@ -111,7 +111,7 @@ li {
     margin-bottom: 8px;
 }
 
-/* Table Styling - Tickets Page */
+/* Table Styling */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -140,7 +140,7 @@ tr:nth-child(even) {
     background-color: #1a1a1e;
 }
 
-/* Form Styling - Checkout Page */
+/* Form Styling */
 form {
     max-width: 450px;
     margin: 10px 0;

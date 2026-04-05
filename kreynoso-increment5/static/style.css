@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-/* ===== CSS Grid Layout ===== */
+/* CSS Grid Layout */
 .container {
     display: grid;
     grid-template-areas:
@@ -81,7 +81,7 @@
     color: #92ad70 !important;
 }
 
-/* Hamburger icon - hidden by default on desktop */
+/* hamburger icon */
 .hamburger {
     display: none;
     font-size: 1.6rem;
@@ -264,7 +264,7 @@ form input[type="checkbox"] {
     max-width: none;
 }
 
-/* ===== Read More / Read Less ===== */
+/* read more / read less */
 #longIntro {
     display: none;
 }
@@ -292,7 +292,7 @@ form input[type="checkbox"] {
     background-color: rgba(146, 173, 112, 0.15);
 }
 
-/* ===== Buy Tickets Page ===== */
+/* buy tickets */
 #ticketForm {
     display: none;
 }
@@ -312,7 +312,7 @@ form input[type="checkbox"] {
     background-color: #a8c282 !important;
 }
 
-/* ===== Gallery / Slideshow ===== */
+/* gallery */
 .gallery {
     max-width: 700px;
     margin: 20px 0;
@@ -350,7 +350,7 @@ form input[type="checkbox"] {
     background-color: rgba(146, 173, 112, 0.15);
 }
 
-/* ===== Leaflet Map ===== */
+/* leaflet map */
 #map {
     height: 350px;
     width: 100%;
@@ -380,7 +380,7 @@ form input[type="checkbox"] {
     background: transparent !important;
 }
 
-/* ===== YouTube Video ===== */
+/* video */
 .video-container {
     max-width: 700px;
     margin: 15px 0;
@@ -394,7 +394,7 @@ form input[type="checkbox"] {
     background: #1a1a1e;
 }
 
-/* ===== Confirmation Page ===== */
+/* confirmation */
 .confirmation-box {
     border: 1px solid #92ad70;
     border-radius: 8px;
@@ -408,9 +408,7 @@ form input[type="checkbox"] {
     margin-bottom: 10px;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN - Mobile (under 650px)
-   ======================================== */
+/* mobile */
 @media screen and (max-width: 650px) {
     .container {
         padding: 10px 15px;

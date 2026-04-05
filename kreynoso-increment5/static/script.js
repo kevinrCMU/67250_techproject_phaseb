@@ -1,6 +1,6 @@
 // MonoMuse - script.js
 
-// ===== Console Practice (Increment 3) =====
+// console practice
 
 var x = 5;
 var y = 7;
@@ -39,12 +39,12 @@ function findTheBanana(arr) {
     });
 }
 
-// Commented out so alerts don't fire on every page load
+// commented out so alerts don't fire on every page load
 // findTheBanana(L1);
 // findTheBanana(L2);
 
 
-// ===== Time-Based Greeting (Increment 3) =====
+// time-based greeting
 
 var now = new Date();
 var hour = now.getHours();
@@ -67,7 +67,7 @@ function greeting(h) {
 greeting(hour);
 
 
-// ===== Dynamic Footer Year (Increment 3) =====
+// footer year
 
 function addYear() {
     var yearEl = document.getElementById("copyYear");
@@ -78,7 +78,7 @@ function addYear() {
 }
 
 
-// ===== Active Navigation Bar (Increment 4) =====
+// active nav
 
 function ActiveNav() {
     var navLinks = document.querySelectorAll('nav a');
@@ -92,7 +92,7 @@ function ActiveNav() {
 ActiveNav();
 
 
-// ===== Responsive Hamburger Nav (Increment 5) =====
+// hamburger nav
 
 function toggleNav() {
     var nav = document.querySelector('.nav_bar');
@@ -102,7 +102,7 @@ function toggleNav() {
 }
 
 
-// ===== Buy Tickets - Reveal Form (Increment 4) =====
+// ticket form
 
 function showTicketForm() {
     var ticketForm = document.getElementById("ticketForm");
@@ -117,7 +117,7 @@ function submitOrder() {
 }
 
 
-// ===== Image Gallery / Slideshow (Increment 5) =====
+// gallery slideshow
 
 var currentSlide = 0;
 
@@ -139,7 +139,7 @@ function changeSlide(direction) {
 }
 
 
-// ===== Checkout Price Calculation =====
+// price calc
 
 function updatePrice() {
     var quantityEl = document.getElementById("quantity");
@@ -157,12 +157,12 @@ function updatePrice() {
 }
 
 
-// ===== Checkout Form Validation =====
+// form validation
 
 function validateCheckout() {
     var isValid = true;
 
-    // Clear previous errors
+    // clear previous errors
     var errors = document.querySelectorAll('.error-msg');
     errors.forEach(function(el) { el.style.display = 'none'; });
 
@@ -232,7 +232,7 @@ function showError(id, message) {
 }
 
 
-// ===== Confirmation Page =====
+// confirmation page
 
 function loadConfirmation() {
     var totalEl = document.getElementById("confirmTotal");
@@ -256,12 +256,12 @@ function loadConfirmation() {
 }
 
 
-// ===== Leaflet Map (Increment 5) =====
+// leaflet map
 
 function initMap() {
     var mapEl = document.getElementById("map");
     if (mapEl && typeof L !== 'undefined') {
-        // Fix default marker icon path (prevents black box issue)
+        // fix default marker icon path (prevents black box issue)
         delete L.Icon.Default.prototype._getIconUrl;
         L.Icon.Default.mergeOptions({
             iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',

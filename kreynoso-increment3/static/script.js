@@ -1,6 +1,6 @@
 // MonoMuse - script.js
 
-// ===== Part 2: JavaScript Basics (Console Practice) =====
+// Part 2: JavaScript Basics (Console Practice)
 
 // Variable Declarations and Console Output
 var x = 5;
@@ -49,7 +49,7 @@ function findTheBanana(arr) {
 // findTheBanana(L2);
 
 
-// ===== Part 3: Time-Based Greeting (DOM Manipulation) =====
+// Part 3: Time-Based Greeting (DOM Manipulation)
 
 var now = new Date();
 var hour = now.getHours();
@@ -74,7 +74,7 @@ function greeting(h) {
 greeting(hour);
 
 
-// ===== Part 4: Dynamic Footer Year =====
+// Part 4: Dynamic Footer Year
 
 function addYear() {
     var yearEl = document.getElementById("copyYear");

@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-/* ===== CSS Grid Layout ===== */
+/* CSS Grid Layout */
 .container {
     display: grid;
     grid-template-areas:
@@ -73,12 +73,12 @@
     border-color: #4d5c3b;
 }
 
-/* Active nav link - dynamically applied by JS */
+/* active nav link */
 .active {
     color: #92ad70 !important;
 }
 
-/* CTA button style for Buy Tickets */
+/* CTA button */
 .cta {
     display: inline-block;
     background-color: #92ad70;
@@ -237,7 +237,7 @@ form input[type="checkbox"] {
     font-size: 0.85rem;
 }
 
-/* ===== Read More / Read Less ===== */
+/* read more / read less */
 #longIntro {
     display: none;
 }
@@ -264,7 +264,7 @@ form input[type="checkbox"] {
     background-color: rgba(146, 173, 112, 0.15);
 }
 
-/* ===== Buy Tickets Page ===== */
+/* buy tickets */
 #ticketForm {
     display: none;
 }
